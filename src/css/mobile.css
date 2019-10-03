@@ -1,0 +1,31 @@
+/* Media Queries */
+@media only screen and (max-width: 900px) {
+    #container section.card  {
+        margin: 0px 20px 0 200px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    html {
+        background-color: var(--dark-color);
+    }
+
+    #container {
+        border: solid 0px;
+        scroll-snap-type: none;
+    }
+
+    nav, header {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    #container section.card  {
+        margin: 0px 40px;
+    }
+
+    section:not(#intro) h1 {
+        left: 40px;
+    }
+}
